@@ -47,6 +47,26 @@ body, body * {
     background: #fff;
     mix-blend-mode: screen;
   }
+
+  /* .content figure,  */
+  .show {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .hide {
+    opacity: 0 !important;
+    transform: translateY(-20px) !important;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  /* .content figure.show, 
+  .content .loading.hide {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+
   .content .name {
     font-family: Montserrat, sans-serif;
     font-weight: 900;
@@ -57,6 +77,10 @@ body, body * {
     color: #000;
     margin: 0;
     text-align: center;
+  }
+
+  .d-none {
+    display: none !important;
   }
   
   @media (min-width: 419px) {
